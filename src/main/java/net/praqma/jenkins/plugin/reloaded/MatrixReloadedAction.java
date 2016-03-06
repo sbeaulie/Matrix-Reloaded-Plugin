@@ -166,7 +166,7 @@ public class MatrixReloadedAction implements Action {
                 String[] vs = key.split(Definitions.__DELIMITER, 2);
                 try {
                     if (vs.length > 1) {
-                        logger.info("[MRP] adding " + key);
+                        logger.info("[MRP] adding " + key + getDisplayName());
                         raction.addConfiguration( Combination.fromString(vs[1]), true );
                     }
 
